@@ -8,7 +8,7 @@ export const TaskForm = () => {
   return (
     <header className="app_header">
       <form>
-        <input type="text" name="task" />
+        <input className="task_input" type="text" name="task" />
         <div className="task_form_bottom">
           <div>
             <Tag tagName="HTML" />
@@ -17,7 +17,7 @@ export const TaskForm = () => {
             <Tag tagName="React" />
           </div>
           <div>
-            <select name="status">
+            <select name="status" className="task_status">
               <option value="todo">To Do</option>
               <option value="inprogress">In Progress</option>
               <option value="done">Done</option>
