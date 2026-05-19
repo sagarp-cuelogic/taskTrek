@@ -1,5 +1,9 @@
 import "./Tag.css";
 
-export const Tag = ({ tagName }) => {
-  return <button className="tag">{tagName}</button>;
+export const Tag = ({ tagName, handleTag }) => {
+  return (
+    <button type="button" className="tag" onClick={() => handleTag(tagName)}>
+      {tagName}
+    </button>
+  );
 };
